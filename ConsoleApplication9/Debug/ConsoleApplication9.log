@@ -1,2 +1,4 @@
 ﻿  ConsoleApplication9.cpp
-  ConsoleApplication9.vcxproj -> c:\users\kandh\onedrive\documents\visual studio 2015\Projects\ConsoleApplication9\Debug\ConsoleApplication9.exe
+c:\users\kandh\onedrive\documents\visual studio 2015\projects\consoleapplication9\consoleapplication9\consoleapplication9.cpp(62): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\kandh\onedrive\documents\visual studio 2015\projects\consoleapplication9\consoleapplication9\consoleapplication9.cpp(66): warning C4553: '==': operator has no effect; did you intend '='?
+  ConsoleApplication9.vcxproj -> C:\Users\kandh\onedrive\documents\visual studio 2015\Projects\ConsoleApplication9\Debug\ConsoleApplication9.exe
