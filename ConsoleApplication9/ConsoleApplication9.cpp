@@ -106,6 +106,13 @@ void displayans()
 		cout << dispar[i] << "\n";
 	}
 }
+void refresh()
+{
+	for (int i = 0; i < 4; i++)
+	{
+		dispar[i] = 0;
+	}
+}
 int main()
 {
 	cout<<"MASTERIND GAME";
@@ -115,11 +122,16 @@ int main()
 	cin >> noofrounds;
 	//displayans();										//REMOVE
 	cout << "\n Enter your guess";
-	getinput();											// get the input four number guesses
-	//displayans();										//REMOVE
-	displayinp();										// display what we have got
-	//displayans();										//REMOVE
-	check();											// checking condns
-	displayans();										// display feedback thing
+	while (noofrounds != 0)
+	{
+		getinput();											// get the input four number guesses
+		//displayans();										//REMOVE
+		displayinp();										// display what we have got
+		//displayans();										//REMOVE
+		check();											// checking condns
+		displayans();										// display feedback thing
+		noofrounds--;
+		refresh();
+	}
     return 0;
 }
