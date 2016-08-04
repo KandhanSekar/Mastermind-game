@@ -6,6 +6,7 @@
 #include <vector>
 using namespace std;
 void displayans();
+int noofrounds;										//no of rounds plaed(NOt used so far)
 int dispar[] = { 0,0,0,0 };
 int crt[] = { 0, 1, 2, 3 };
 vector<int>mag1;
@@ -56,7 +57,7 @@ bool search(int b)
 
 void nextcon()
 {
-	cout << "\n CHECKING NEXT CON\n";
+	//cout << "\n CHECKING NEXT CON\n";
 	for (int i = 0; i < 4; i++)
 	{
 		//cout << "enter loop 1\n";
@@ -80,7 +81,7 @@ void nextcon()
 }
 void check()
 {
-	cout << "\nENTERED CHECK FN\n";
+	//cout << "\nENTERED CHECK FN\n";
 	for (int i = 0; i < 4; i++)
 	{
 		if (imp[i] == crt[i])
@@ -112,25 +113,74 @@ void refresh()
 	{
 		dispar[i] = 0;
 	}
+	cout << "\n you have " << noofrounds<<" Guessed left\n";
+
+}
+
+void winner()
+{
+	if (dispar[0] == 1 && dispar[1] == 1 && dispar[2] == 1 && dispar[3] == 1)
+	{
+		cout << "\n CORRECT GUESS \n CONGRATS YOU WON with " << noofrounds << " guesses left \n";
+		exit(0);
+	}
+	
 }
 int main()
 {
-	cout<<"MASTERIND GAME";
+	cout<<"MASTERIND GAME\n";
+	cout << "Choose your option\n 1. Pre defined sequence \n 2. Random sequence \n 3. 2 player\n";
+	int p;
+	cin >> p;
+	switch (p)
+	{
+	case 1:
+	{
+		break;
+	}
+	case 2:
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			int v2;
+			v2 = rand() % 5 + 1;
+			//cout << v2;
+			crt[i] = v2;
+		}
+		break;
+	}
+	case 3:
+	{
+		cout << "\n Enter the  play sequence";
+		for (int i = 0; i < 4; i++)
+		{
+			cin >> crt[i];
+		}
+		for (int i = 0; i < 99; i++)
+		{
+			cout << "\n";
+		}
+
+		break;
+	}
+	}
 	//displayans();										//REMOVE
-	int noofrounds;										//no of rounds plaed(NOt used so far)
+	
 	cout << "enter the number of rounds";
 	cin >> noofrounds;
 	//displayans();										//REMOVE
-	cout << "\n Enter your guess";
+	//cout << "\n Enter your guess";
 	while (noofrounds != 0)
 	{
+		cout << "\n Enter your guess";
 		getinput();											// get the input four number guesses
 		//displayans();										//REMOVE
-		displayinp();										// display what we have got
+		//displayinp();										// display what we have got
 		//displayans();										//REMOVE
 		check();											// checking condns
-		displayans();										// display feedback thing
+		//displayans();										// display feedback thing
 		noofrounds--;
+		winner();
 		refresh();
 	}
     return 0;
