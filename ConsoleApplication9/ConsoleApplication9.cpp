@@ -174,11 +174,11 @@ int main()
 	{
 		cout << "\n Enter your guess";
 		getinput();											// get the input four number guesses
-		//displayans();										//REMOVE
+		
 		//displayinp();										// display what we have got
-		//displayans();										//REMOVE
+		
 		check();											// checking condns
-		//displayans();										// display feedback thing
+		displayans();										// display feedback thing
 		noofrounds--;
 		winner();
 		refresh();
