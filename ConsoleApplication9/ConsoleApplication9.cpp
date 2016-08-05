@@ -129,6 +129,7 @@ void winner()
 int main()
 {
 	cout<<"MASTERIND GAME\n";
+	cout << "\n Here are the rules of the Game !!";
 	cout << "Choose your option\n 1. Pre defined sequence \n 2. Random sequence \n 3. 2 player\n";
 	int p;
 	cin >> p;
