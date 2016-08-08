@@ -165,12 +165,11 @@ int main()
 		break;
 	}
 	}
-	//displayans();										//REMOVE
+	
 	
 	cout << "enter the number of rounds";
 	cin >> noofrounds;
-	//displayans();										//REMOVE
-	//cout << "\n Enter your guess";
+	
 	while (noofrounds != 0)
 	{
 		cout << "\n Enter your guess";
