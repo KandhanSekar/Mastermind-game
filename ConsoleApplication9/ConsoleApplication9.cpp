@@ -68,9 +68,9 @@ void nextcon()
 				//cout << "condi is tru\n"<<imp[i];
 				//cout << "aiiiiiii "<< i;
 				dispar[i] = 2;
-				//cout << "THISSSS";
+				
 				//displayans();
-				//cout << "THISSS";
+				
 			}
 			else
 			{
@@ -81,7 +81,7 @@ void nextcon()
 }
 void check()
 {
-	//cout << "\nENTERED CHECK FN\n";
+	
 	for (int i = 0; i < 4; i++)
 	{
 		if (imp[i] == crt[i])
@@ -136,7 +136,7 @@ int main()
 	switch (p)
 	{
 	case 1:
-	{//
+	{
 		break;
 	}
 	case 2:
@@ -145,7 +145,7 @@ int main()
 		{
 			int v2;
 			v2 = rand() % 5 + 1;
-			//cout << v2;
+			
 			crt[i] = v2;
 		}
 		break;
@@ -175,7 +175,7 @@ int main()
 		cout << "\n Enter your guess";
 		getinput();											// get the input four number guesses
 		
-		//displayinp();		////								// display what we have got
+		//displayinp();										// display what we have got
 		
 		check();											// checking condns
 		displayans();										// display feedback thing
