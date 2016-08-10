@@ -175,7 +175,7 @@ int main()
 		cout << "\n Enter your guess";
 		getinput();											// get the input four number guesses
 		
-		//displayinp();		//								// display what we have got
+		//displayinp();		////								// display what we have got
 		
 		check();											// checking condns
 		displayans();										// display feedback thing
