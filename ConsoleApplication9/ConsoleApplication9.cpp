@@ -1,12 +1,12 @@
 // ConsoleApplication9.cpp : Defines the entry point for the console application.
-//
+//KANDHAN SEKAR MASTERMIND 2016
 
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
 using namespace std;
 void displayans();
-int noofrounds;										//no of rounds plaed(NOt used so far)
+int noofrounds;										//no of rounds plaed(NOt used so far)used 8/11
 int dispar[] = { 0,0,0,0 };
 int crt[] = { 0, 1, 2, 3 };
 vector<int>mag1;
